@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+	
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+
+
+
+	 </script>
+
+<body>
+<h1 id="nume"><h1>Necșa Anamaria</h1></h1>
+<p><a href="mailto:necsa.ana@yahoo.com">necsa.ana@yahoo.com</a><br> </p>
+<table class="chenar">
+	<tr>
+	<th class="chenar">
+<h2 >Structura retelei personale si accesul la internet</h2>
+<img " src="internet.jpeg" width="460" height="345"  >
+<h2 >Caracteristicile conexiunii la retea</h2>
+<ul align="right">
+  <li>Adresa MAC: D8-C0-A6-A9-70-6B</li>
+  <li>Adresa IP: 192.168.0.103 </li>
+  <li>Debit la download: 25.4 Mbps</li>
+  <li>Debit la upload: 3.5 Mbps</li>
+</ul>  
+</th>
+	</tr>
+</table>
+<h2>Utilizarea resurselor</h2>
+
+<div class="gallery">
+  <a target="_blank" href="cpu.png">
+    <img src="cpu.png" alt="cpu" width="700" height="500">
+  </a>
+  <div class="desc">CPU</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="disk.png">
+    <img src="disk.png" alt="disk" width="700" height="500">
+  </a>
+  <div class="desc">disk</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="memory.png">
+    <img src="memory.png" alt="memory" width="700" height="500">
+  </a>
+  <div class="desc">memorie</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="p.deschise.png">
+    <img src="p.deschise.png" alt="porturi" width="700" height="500">
+  </a>
+  <div class="desc">porturi deschise</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="processes.png">
+    <img src="processes.png" alt="procese" width="700" height="500">
+  </a>
+  <div class="desc">procese</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="services.png">
+    <img src="services.png" alt="sericii" width="700" height="500">
+  </a>
+  <div class="desc">servicii</div>
+</div>
+
+<br> 
+<br>
+<button ondblClick="showSlides()"><h4>Monitorizare resurse</h4> </button>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="cpu.png" style="width:50%">
+  <div class="text">Consum CPU</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="disk.png" style="width:50%">
+  <div class="text">Consum Disk</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="memory.png" style="width:50%">
+  <div class="text">Consum memorie</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="p.deschise.png" style="width:50%">
+  <div class="text">porturi deschise</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="processes.png" style="width:50%">
+  <div class="text">procese</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="services.png" style="width:50%">
+  <div class="text">servicii</div>
+</div>
+
+
+<br>
+
+
+
+
+<div style="text-align:left;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+
+
+
+
+</div>
+
+
+<br><br>
+<h2> Componente si caracteristici </h2>
+<br><br>
+<table >
+  <tr>
+    <th>Denumire</th>
+    <th>Producator</th>
+	<th>Parametrii</th>
+  </tr>
+  <tr>
+    <td> procesor AMD Ryzen™ 5 3550H  </td>
+    <td> AMD </td>
+	<td> <ul>
+  <li>Frecventa	2,1 GHz</li>
+  <li>Frecventa turbo max	3,7 GHz </li>
+  <li>Procesor grafic integrat	Radeon Vega 8</li>
+  <li>Numar nuclee	4</li>
+         </ul> </td>
+	</td>
+  </tr>
+  <tr>
+    <td>memorie</td>
+    <td> </td>
+	<td><ul>
+  <li>Capacitat 8 GB</li>
+  <li>Frecventa	2400 MHz </li>
+  <li>Suport maxim	32 GB</li>
+  <li>Tip memorie	DDR4</li>
+         </ul>  </td>
+  </tr>
+  <tr>
+	<td>stocare </td>
+	<td> </td>
+	<td><ul>
+  <li>Solid State Disk	Da</li>
+  <li>Capacitate SSD 512 GB </li>
+  <li>Tip SSD M.2 PCIe</li>
+  <li>Suport HDD 2.5 inch Da</li>
+         </ul>  </td>
+  </tr>
+  <tr>
+	<td>placa video GeForce	GTX 1650 </td>
+	<td>NVIDIA </td>
+	<td> <ul>
+  <li>Memorie dedicata 4 GB</li>
+  <li>Tip GDDR5</li>
+  <li>Suport DirectX 12	Da</li>
+  <li>Placa video Dedicata</li>
+         </ul> </td>
+</table>
+
+
+
+</body>
